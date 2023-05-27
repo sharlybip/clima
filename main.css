@@ -580,6 +580,10 @@ video {
   max-width: 1280px;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .rounded {
   border-radius: 0.25rem;
 }
