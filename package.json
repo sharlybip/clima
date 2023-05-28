@@ -1,0 +1,40 @@
+{
+  "name": "workshop-4-clima",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "twcss": "npx tailwindcss -i ./src/styles/index.css -o ./src/index.css --watch",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode=development --config webpack.config.js",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sharlybip/clima.git"
+  },
+  "keywords": [],
+  "author": "Carlos Dominguez <sharlybip@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sharlybip/clima/issues"
+  },
+  "homepage": "https://sharlybip.github.io/clima/",
+  "devDependencies": {
+    "@babel/core": "^7.22.1",
+    "autoprefixer": "^10.4.14",
+    "babel-loader": "^9.1.2",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.7.4",
+    "gh-pages": "^5.0.0",
+    "html-webpack-plugin": "^5.5.1",
+    "mini-css-extract-plugin": "^2.7.6",
+    "postcss-cli": "^10.1.0",
+    "postcss-loader": "^7.3.1",
+    "style-loader": "^3.3.3",
+    "tailwindcss": "^3.3.2",
+    "webpack": "^5.84.1",
+    "webpack-cli": "^5.1.1",
+    "webpack-dev-server": "^4.15.0"
+  }
+}
