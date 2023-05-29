@@ -39,18 +39,18 @@ module.exports = {
             template: './public/index.html',
             filename:'./index.html'
         }),new MiniCssExtractPlugin(),
-        // new CopyPlugin({
-        //     patterns: [
+        new CopyPlugin({
+            patterns: [
         //         {
         //             from: path.resolve(__dirname, "src", "assets/videos"),
         //             to: "assets/videos"
         //         },
-        //         {
-        //             from: path.resolve(__dirname, "src", "assets/images"),
-        //             to: "assets/images"
-        //         }
+                {
+                    from: path.resolve(__dirname, "src", "assets/images"),
+                    to: "assets/images"
+                }
 
-        //     ]
-        // }),
+            ]
+        }),
     ]
 }
