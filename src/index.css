@@ -613,6 +613,10 @@ video {
   width: 3rem;
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
 .flex-wrap {
   flex-wrap: wrap;
 }
