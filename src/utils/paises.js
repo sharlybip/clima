@@ -1972,7 +1972,7 @@ const searchCountry = (country) => {
     let countryName = ''
     paises.map(pais => {
         if (pais.iso2 === country) 
-         countryName = pais.name
+         countryName = `${pais.name}`;
     })
     return countryName;
 }

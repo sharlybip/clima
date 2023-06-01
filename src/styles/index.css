@@ -1,3 +1,7 @@
+:root {
+    --novaFont : 'Nova Square', cursive;
+
+}
 * {
     box-sizing: border-box;
 }
@@ -5,7 +9,17 @@
 @tailwind components;
 @tailwind utilities;
 
+.title {
+    font-family: var(--novaFont)
+}
 footer {
     top:auto;
     bottom: 0;
+}
+.sun {
+    background-image: linear-gradient(to bottom, #f2e92d, #f2c100, #ed9800, #e36e00, #d34000);
+}
+.margin {
+    margin-inline-end: 8px;
+    margin-block-end: 8px;
 }
